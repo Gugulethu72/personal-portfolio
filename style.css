@@ -216,6 +216,76 @@ nav{
 }
 
 /* ----- PROJECTS ----*/
+.work__grid{
+  margin: 1rem;
+  display: grid;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.frontend__grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 5rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.backend__grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 5rem;
+  justify-content: center;
+}
+.work__link a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid white 1px;
+  height: 30px;
+  width: 100px;
+}
+
+.work__link a:hover{
+  background-color: var(--secondary-color);
+}
+
+.work__content{
+  margin-top: 2rem;
+}
+
+.work__content h2{
+  color: var(--black);
+}
+
+.work__content li{
+  list-style-type: disc;
+  color: var(--primary-color);
+}
+
+.work__link {
+ margin-top: 1rem;
+ display: flex;
+ margin-left: 1rem;
+}
+.work__link a{
+  margin-left: 1rem;
+}
+
+.work__section{
+  color: var(--secondary-color);
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2rem;
+}
+.work__img{
+  display: flex;
+  width: 35%;
+  justify-content: center;
+  align-items: center;
+}
 
 /* ----- CONTACT ----*/
 
@@ -425,9 +495,14 @@ body.no-scroll{
 }
 
 /* ----- PROJECT ----*/
-.project__grid{
-  grid-template-columns: repeat(2,1fr);
+.frontend__grid{
+  grid-template-columns: repeat(1,1fr);
 }
+
+.backend__grid{
+  grid-template-columns: repeat(1,1fr);
+}
+
 
 /* ----- CONTACT ----*/
 .contact__content{
